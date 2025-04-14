@@ -215,3 +215,10 @@ export BXSHARE="/usr/local/bochs/share/bochs"
 # A55 uboot
 #export REPO_URL='http://repo.guoxintech.com/git-repo/git-repo-git'
 export REPO_URL='http://repo.guoxintech.com/git-repo/git-repo.git'
+
+
+# 禁用 zsh 共享多终端命令，各终端使用各终端的历史
+# setopt no_share_history
+
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
