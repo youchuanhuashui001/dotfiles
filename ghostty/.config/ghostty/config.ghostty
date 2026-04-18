@@ -1,0 +1,11 @@
+# theme = Catppuccin Macchiato
+theme = 0x96f
+
+mouse-hide-while-typing = true
+copy-on-select = clipboard
+
+
+keybind = ctrl+shift+h=goto_split:left
+keybind = ctrl+shift+j=goto_split:down
+keybind = ctrl+shift+k=goto_split:up
+keybind = ctrl+shift+l=goto_split:right
