@@ -121,9 +121,9 @@ source $ZSH/oh-my-zsh.sh
 export PATH=${PATH}:/opt/gxtools/csky-elf-tools-i386-minilibc-20170723_cross_compiler/csky-elf-tools-i386-minilibc-20170723/bin
 
 # ck610 用于 Linux2.6/3.0 内核及应用程序编译
-# export PATH=${PATH}:/opt/gxtools/csky-linux-tools-i386-uclibc-20170724_cross_compiler/csky-linux-tools-i386-uclibc-20170724/bin
-# export PATH=${PATH}:/opt/gxtools/csky-linux-tools-i386-uclibc-20180905_cross_compiler/bin
-# export PATH=${PATH}:/opt/gxtools/csky-linux-tools-i386-uclibc-20180905_cross_compiler/csky-linux/bin
+#export PATH=${PATH}:/opt/gxtools/csky-linux-tools-i386-uclibc-20170724_cross_compiler/csky-linux-tools-i386-uclibc-20170724/bin
+#export PATH=${PATH}:/opt/gxtools/csky-linux-tools-i386-uclibc-20180905_cross_compiler/bin
+#export PATH=${PATH}:/opt/gxtools/csky-linux-tools-i386-uclibc-20180905_cross_compiler/csky-linux/bin
 
 # ck610 用于 Linux4.9 内核及应用程序编译
 export PATH=${PATH}:/opt/gxtools/csky-linux-gnu-tools-i386-glibc-linux-4.9.56-20190605_cross_compiler/csky-linux-gnu-tools-i386-glibc-linux-4.9.56-20190605/bin
@@ -150,7 +150,9 @@ export PATH=${PATH}:/opt/gxtools/JLink/JLink_Linux_V652a_i386
 export PATH=$PATH:/opt/Typora-linux-x64
 
 # risv-v
-export PATH=${PATH}:/opt/gxtools/Xuantie-900-gcc-elf-newlib-x86_64-V2.8.0-20231018/Xuantie-900-gcc-elf-newlib-x86_64-V2.8.0/bin
+# export PATH=${PATH}:/opt/gxtools/Xuantie-900-gcc-elf-newlib-x86_64-V2.8.0-20231018/Xuantie-900-gcc-elf-newlib-x86_64-V2.8.0/bin
+# Sagitta bbt 编译不过，更新工具链
+export PATH=${PATH}:/opt/gxtools/Xuantie-900-gcc-elf-newlib-x86_64-V2.10.2-20240904/Xuantie-900-gcc-elf-newlib-x86_64-V2.10.2/bin
 
 # virgo linux 更新工具链
 export PATH=${PATH}:/opt/gxtools/arm-gnu-toolchain-12.3.rel1-x86_64-arm-none-linux-gnueabihf/arm-gnu-toolchain-12.3.rel1-x86_64-arm-none-linux-gnueabihf/bin
@@ -158,6 +160,9 @@ export PATH=${PATH}:/opt/gxtools/arm-gnu-toolchain-12.3.rel1-x86_64-arm-none-lin
 
 # Virgo A55 arm64 工具链
 export PATH=${PATH}:/opt/gxtools/arm-gnu-toolchain-12.3.rel1-x86_64-aarch64-none-linux-gnu/bin
+
+# Virgo MPW arm64 linux4.19 工具链
+export PATH=${PATH}:/home/tanxzh/goxceed/android/toolchains/aarch64/bin
 
 
 # my config
@@ -221,4 +226,17 @@ export REPO_URL='http://repo.guoxintech.com/git-repo/git-repo.git'
 # setopt no_share_history
 
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+#eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# gemini-cli
+export GOOGLE_CLOUD_PROJECT="geminicli-474606"
+
+# openocd
+#export LD_LIBRARY_PATH="/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+
+
+# ffmpeg
+export PATH=$PATH:/usr/local/ffmpeg/bin
+
+# openocd
+export PATH=$PATH:/home/tanxzh/gx/Tools/openocd/xpack/xpack-openocd-0.12.0-7/bin
