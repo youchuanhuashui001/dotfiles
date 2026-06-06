@@ -1,3 +1,72 @@
+Dotfiles usage
+
+This repository uses GNU Stow to manage application configs.
+
+Layout:
+
+- top-level directory name = package name passed to `stow`
+- files under each package keep their real path structure in `$HOME`
+- example: `zed/.config/zed/settings.json` will be linked to `~/.config/zed/settings.json`
+
+Common commands:
+
+```sh
+cd ~/dotfiles
+stow zed
+stow nvim
+stow ghostty
+stow tmux
+stow yazi
+stow zsh
+```
+
+Remove an installed package:
+
+```sh
+cd ~/dotfiles
+stow -D zed
+```
+
+Reinstall a package:
+
+```sh
+cd ~/dotfiles
+stow -D zed
+stow zed
+```
+
+Zed
+
+Zed is managed from:
+
+```sh
+~/dotfiles/zed/.config/zed
+```
+
+Current synced files:
+
+```text
+zed/.config/zed/keymap.json
+zed/.config/zed/settings.json
+zed/.config/zed/themes/onedark-nvim-deep.json
+```
+
+Install Zed config on a machine:
+
+```sh
+cd ~/dotfiles
+stow zed
+```
+
+Update Zed config after editing in `~/.config/zed`:
+
+1. Copy the changed files back into `~/dotfiles/zed/.config/zed/`
+2. Commit the changes in this repository
+3. On another machine, pull the repo and run `stow zed`
+
+If `stow zed` reports a conflict, it usually means a real file already exists at `~/.config/zed/...`.
+Move or back it up first, then run `stow zed` again.
+
 Using GNU Stow to manage your dotfiles
 I accidentally stumbled upon something yesterday that I felt like sharing, which fell squarely into the "why the hell didn’t I know about this before?" category. In this post, I’ll describe how to manage the various configuration files in your GNU/Linux home directory (aka "dotfiles" like .bashrc) using GNU Stow.
 

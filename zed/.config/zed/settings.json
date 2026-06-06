@@ -1,0 +1,94 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "git_panel": {
+    "tree_view": false
+  },
+  "terminal": {
+    "font_size": 15.0
+  },
+  "cli_default_open_behavior": "new_window",
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  "vim": {
+    "cursor_shape": {
+      "visual": "block",
+      "insert": "inherit"
+    }
+  },
+  "colorize_brackets": true,
+  "restore_on_startup": "empty_tab",
+  "edit_predictions": {
+    "mode": "eager",
+    "provider":"copilot"
+//    "disabled_globs": [],
+//    "mode": "subtle"
+  },
+  "agent": {
+    "default_profile": "write",
+    "dock": "right",
+    "default_model": {
+      "provider": "openai-subscribed",
+      "model": "gpt-5.4",
+      "enable_thinking": true,
+      "effort": "medium"
+    },
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  "project_panel": {
+    "dock": "left"
+  },
+  "which_key": {
+    "enabled": false
+  },
+  "session": {
+    "trust_all_worktrees": true
+  },
+  "vim_mode": true,
+  "base_keymap": "VSCode",
+  "preview_tabs": {
+    "enabled": false
+  },
+  "mouse_wheel_zoom": true,
+  "minimap": {
+    "show": "never"
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "show_whitespaces": "all",
+  "hard_tabs": true,
+  "tab_size": 8,
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "dark",
+    "light": "Ayu Light",
+    "dark": "OneDark.nvim Deep",
+  },
+  "buffer_font_features": {
+    "calt": false, // disable ligatures
+    // "liga": false,
+    // "dlig": false
+  }
+}
+
+

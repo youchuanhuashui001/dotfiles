@@ -143,6 +143,10 @@ export PATH=${PATH}:/opt/gxtools/sdcc/sdcc-3.6.0/bin
 export PATH=${PATH}:/opt/gxtools/gcc-nationalchip-arm-none-eabi-4_9-2015q3-20150921--with-abi=aapcs-linux/gcc-nationalchip-arm-none-eabi-4_9-2015q3-20150921/bin
 # lepus net
 #export PATH=${PATH}:/opt/gxtools/gcc-arm-none-eabi-5_4-2016q3-20160926-linux/gcc-arm-none-eabi-5_4-2016q3/bin
+#
+#
+# Orion
+export PATH=${PATH}:/opt/gxtools/armv7-eabihf-uclibc-stable-2024.02-1/armv7-eabihf--uclibc--stable-2024.02-1/bin
 
 export PATH=${PATH}:/opt/gxtools/JLink/jlink_64
 export PATH=${PATH}:/opt/gxtools/JLink/JLink_Linux_V652a_i386
@@ -219,7 +223,7 @@ export BXSHARE="/usr/local/bochs/share/bochs"
 
 # A55 uboot
 #export REPO_URL='http://repo.guoxintech.com/git-repo/git-repo-git'
-export REPO_URL='http://repo.guoxintech.com/git-repo/git-repo.git'
+#export REPO_URL='http://repo.guoxintech.com/git-repo/git-repo.git'
 
 
 # 禁用 zsh 共享多终端命令，各终端使用各终端的历史
@@ -240,3 +244,11 @@ export PATH=$PATH:/usr/local/ffmpeg/bin
 
 # openocd
 export PATH=$PATH:/home/tanxzh/gx/Tools/openocd/xpack/xpack-openocd-0.12.0-7/bin
+
+
+# repo
+#export REPO_URL='https://mirrors.tuna.tsinghua.edu.cn/git/git-repo'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
